@@ -5,7 +5,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #fff;
-    margin: 50px 140px 0 140px;
+    margin: 0;
 }
 
 /* Header Section Styles */
@@ -124,4 +124,28 @@ body {
     display: flex;
     justify-content: space-between;
     padding-right: 150px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FDF94E;
+    text-align: center;
+    padding: 120px 130px;
+}
+
+footer h2 {
+    font-size: 40px;
+}
+
+footer hr  {
+    border: 0;
+    border-bottom: 1px solid #1E1E1E;
+    margin-bottom: 30px;
+}
+footer a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 40px;
 }
