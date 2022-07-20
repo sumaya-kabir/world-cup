@@ -1,0 +1,53 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Common Styles or utilities */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    margin: 50px 140px 0 140px;
+}
+
+/* Header Section Styles */
+.banner {
+    display: flex;
+    background-color: #FDF94E;
+    border-radius: 30px;
+    width: 100%;
+    padding: 111px 0 111px 106px; 
+}
+
+.banner h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.left-area {
+    width: 50%;
+}
+
+.btn {
+    background-color: #B7002D;
+    padding:16px 25px;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.right-area {
+    width: 50%;
+    margin-right: 0px;
+}
+
+.right-area img {
+    width: 50%;
+}
