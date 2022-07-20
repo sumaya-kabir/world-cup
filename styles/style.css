@@ -15,6 +15,7 @@ body {
     border-radius: 30px;
     width: 100%;
     padding: 111px 0 111px 106px; 
+    margin-bottom: 130px;
 }
 
 .banner h1 {
@@ -34,6 +35,10 @@ body {
     width: 50%;
 }
 
+.blue-txt {
+    color: #1A419A;
+}
+
 .btn {
     background-color: #B7002D;
     padding:16px 25px;
@@ -48,6 +53,75 @@ body {
     margin-right: 0px;
 }
 
-.right-area img {
-    width: 50%;
+/* Blog & side navigation Section */
+.container {
+    display: flex;
+    margin-bottom: 130px;
+}
+/* Side Navigation Styles */
+.side-navigation {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: #FDF94E;
+    min-width: 312px;
+    height: 312px;
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
+.side-navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.side-navigation button {
+    background-color: #B7002D;
+    margin: 15px 30px;
+    border: 0;
+    border-radius: 10px;
+}
+
+#active {
+    background-color: #1A419A;
+}
+
+/* Blogs Styles */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    margin-left: 24px;
+    width: 100%;
+}
+.blog {
+    width: 312px;
+    height: 362px;
+    border: 1px solid #80808060;
+    border-radius: 10px;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-info button {
+    background-color: #fff;
+    border: 1px solid #1E1E1E;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 15px;
+}
+
+.blog-info h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0 0 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
 }
