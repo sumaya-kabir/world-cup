@@ -7,11 +7,11 @@ body {
     width: 100%;
     background-color: #fff;
     margin: 0;
-    padding: 50px 140px 0 140px;
 }
 
 /* Header Section Styles */
-.banner {
+
+header {
     display: flex;
     background-color: #FDF94E;
     border-radius: 30px;
@@ -19,8 +19,12 @@ body {
     margin-bottom: 130px;
 }
 
+/* main {
+    margin: 50px 140px 0 140px;
+} */
+
 .left-area {
-    width: 50%;
+    width: 100%;
     padding: 100px;
 }
 
@@ -51,8 +55,13 @@ body {
 }
 
 .right-area {
-    width: 50%;
+    width: 100%;
     padding: 100px;
+}
+
+.right-area img {
+    background-size: cover;
+    width: 100%;
 }
 
 /* Blog & side navigation Section */
@@ -149,7 +158,6 @@ footer {
     background-color: #FDF94E;
     text-align: center;
     padding: 120px 130px;
-    margin: 0 -140px 0 -140px;
 }
 
 footer h2 {
@@ -167,4 +175,41 @@ footer a {
     font-size: 18px;
     font-weight: 500;
     padding: 40px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 688px) {
+    body {
+        padding: 20px;
+        margin: 0;
+    }
+    header {
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+        
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+/* low resolution  Tablets, Ipads */
+@media (min-width: 689px) and (max-width: 1024px) {
+    body {
+        background-color: yellow;
+    }
+}
+  
+/* Large screens */
+@media (min-width: 1025px) {
+    body {
+        background-color: white;
+    }
 }
