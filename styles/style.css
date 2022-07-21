@@ -51,7 +51,10 @@ header {
     border: 0;
     color: #fff;
     font-size: 20px;
+    transition: transform 0.9s ease-in;
+    transform: rotateX(360deg);
 }
+
 
 .right-area {
     width: 100%;
@@ -234,6 +237,12 @@ footer hr  {
     .left-area h1 {
         font-size: 50px;
         margin: 0;
+    }
+
+    .left-area p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
     }
 
     .container {
