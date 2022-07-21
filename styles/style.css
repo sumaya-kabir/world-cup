@@ -10,18 +10,16 @@ body {
 }
 
 /* Header Section Styles */
-
 header {
+    margin: 50px 80px 130px 80px;
+}
+.banner {
     display: flex;
     background-color: #FDF94E;
     border-radius: 30px;
-    width: 100%; 
-    margin-bottom: 130px;
-}
+    width: 100%;
 
-/* main {
-    margin: 50px 140px 0 140px;
-} */
+}
 
 .left-area {
     width: 100%;
@@ -31,7 +29,7 @@ header {
 .left-area h1 {
     font-size: 70px;
     font-weight: 700;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .left-area p {
@@ -67,7 +65,8 @@ header {
 /* Blog & side navigation Section */
 .container {
     display: flex;
-    margin-bottom: 130px;
+    width: 100%;
+    padding-bottom: 130px;
 }
 /* Side Navigation Styles */
 .side-navigation {
@@ -106,10 +105,14 @@ header {
     width: 100%;
 }
 .blog {
-    width: 312px;
-    height: 362px;
+    width: 100%;
     border: 1px solid #80808060;
     border-radius: 10px;
+}
+
+.blog-img {
+    width:100%;
+    text-align: center;
 }
 
 .blog-info {
@@ -137,6 +140,20 @@ header {
     padding-right: 150px;
 }
 
+.tablet-button {
+    text-align: center;
+}
+
+#tablet-btn {
+    background-color: #B7002D;
+    padding:16px 50px;
+    margin-bottom: 130px;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
 /* Upcoming Match Styles */
 .matches {
     display: grid;
@@ -158,6 +175,7 @@ footer {
     background-color: #FDF94E;
     text-align: center;
     padding: 120px 130px;
+    /* margin-right: -160px; */
 }
 
 footer h2 {
@@ -169,7 +187,7 @@ footer hr  {
     border-bottom: 1px solid #1E1E1E;
     margin-bottom: 30px;
 }
-footer a {
+.footer-menu a {
     text-decoration: none;
     color: #1E1E1E;
     font-size: 18px;
@@ -177,17 +195,44 @@ footer a {
     padding: 40px;
 }
 
+.social {
+    padding-top: 50px;
+}
+
+.social a{
+    font-size: 30px;
+    color: #1E1E1E;
+    padding: 10px;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 688px) {
-    body {
-        padding: 20px;
-        margin: 0;
-    }
     header {
+        margin: 30px;
+        /* overflow-x: hidden; */
+    }
+    .banner {
         flex-direction: column;
-        padding: 50px;
-        align-items: center;
-        
+        padding: 20px;
+    }
+
+    .left-area {
+        padding: 50px 10px 10px 10px;
+        text-align: center;
+    }
+
+    .right-area {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .right-area img {
+        width: 50%;
+    }
+
+    .left-area h1 {
+        font-size: 50px;
+        margin: 0;
     }
 
     .container {
@@ -195,21 +240,120 @@ footer a {
         align-items: center;
     }
 
+    .side-navigation {
+        background-color: #fff;;
+    }
+
     .blogs {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tablet-button {
+        display: none;
+    }
+
+    footer {
+        padding: 50px 80px;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu a {
+        padding: 15px;
     }
 }
   
 /* low resolution  Tablets, Ipads */
 @media (min-width: 689px) and (max-width: 1024px) {
-    body {
-        background-color: yellow;
+    header {
+        margin: 30px;
+        /* overflow-x: hidden; */
+    }
+    .banner {
+        padding: 20px;
+    }
+
+    .left-area {
+        padding: 10px;
+    }
+
+    .right-area {
+        padding: 10px;
+    }
+
+    .left-area h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-navigation {
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .side-navigation button {
+        width: 50%;
+        margin: 15px 30px;
+        padding: 20px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        padding: 50px 80px;
+    }
+
+    footer {
+        padding: 50px 80px;
+    }
+
+    .footer-menu {
+        display: flex;
+    }
+
+    .footer-menu a {
+        padding: 15px;
+    }
+
+    .footer-menu a {
+        padding: 15px;
     }
 }
   
 /* Large screens */
 @media (min-width: 1025px) {
-    body {
-        background-color: white;
+    .tablet-button {
+        display: none;
     }
 }
