@@ -51,7 +51,7 @@ header {
     border: 0;
     color: #fff;
     font-size: 20px;
-    transition: transform 0.9s ease-in;
+    transition: transform 1s 2s ease-in;
     transform: rotateX(360deg);
 }
 
